@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+    url: jdbc:mariadb://would-u-duo-database.c89u9zlyp9t3.ap-northeast-2.rds.amazonaws.com/duo
+    username: root
+    password: rkskekfk123!
+    driver-class-name: org.mariadb.jdbc.Driver
