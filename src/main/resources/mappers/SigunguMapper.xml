@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.SigunguMapper">
+
+    <!-- 조회 -->
+    <select id="findSigungu" resultType="Sigungu">
+        select sigungu_number, sigungu_name, do_number
+        from sigungu
+    </select>
+
+
+    <select id="findSigunguByDoNumber" resultType="Sigungu">
+        SELECT sigungu_number, sigungu_name, do_number
+        FROM sigungu
+        WHERE do_number = #{doNumber}
+    </select>
+
+</mapper>
