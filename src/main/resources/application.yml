@@ -7,7 +7,13 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
   datasource:
-    url: jdbc:mariadb://would-u-duo-database.c89u9zlyp9t3.ap-northeast-2.rds.amazonaws.com/duo
+    url: jdbc:mariadb://would-u-duo-database.c89u9zlyp9t3.ap-northeast-2.rds.amazonaws.com/test
     username: root
     password: rkskekfk123!
     driver-class-name: org.mariadb.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:/mappers/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.example.demo.vo
