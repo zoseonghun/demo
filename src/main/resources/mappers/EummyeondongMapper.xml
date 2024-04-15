@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.EummyeondongMapper">
+
+    <!-- 조회 -->
+    <select id="findEummyeondong" resultType="Eummyeondong">
+        select eummyeondong_number, eummyeondong_name, sigungu_number
+        from eummyeondong
+    </select>
+
+    <select id="findEummyeondongBySigunguNumber" resultType="Eummyeondong">
+        SELECT eummyeondong_number, eummyeondong_name, sigungu_number
+        FROM eummyeondong
+        WHERE sigungu_number = #{sigunguNumber}
+    </select>
+
+
+
+
+</mapper>

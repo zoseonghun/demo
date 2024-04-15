@@ -18,13 +18,24 @@
 
 <label for="do"></label>
 <select id="do">
-
+    <option>광역 선택</option>
 </select>
 
 <label for="sigungu"></label>
 <select name="" id="sigungu">
-
+    <option>시군구 선택</option>
 </select>
+
+<label for="eummyeondong"></label>
+<select name="" id="eummyeondong">
+    <option>읍면동 선택</option>
+</select>
+
+<label for="ri"></label>
+<select name="" id="ri">
+    <option>리 선택</option>
+</select>
+
 
 </body>
 </html>
